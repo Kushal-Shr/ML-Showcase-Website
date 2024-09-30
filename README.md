@@ -5,7 +5,7 @@ Welcome to Machine Learning Project Showcase project! This project is react webs
 
 
 ## Project UI
-![Website UI](images/mlshowcase_ui.png)
-![Diabetes UI](images/diabetesui.png)
-![Mail UI](images/spamui.png)
-![Sales UI](images/salesui.png)
+![Website UI](public/images/mlshowcase_ui.png)
+![Diabetes UI](public/images/diabetesui.png)
+![Mail UI](public/images/spamui.png)
+![Sales UI](public/images/salesui.png)
