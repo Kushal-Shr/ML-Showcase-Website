@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Light Theme */
+:root[data-theme='light'] {
+    background: rgb(252,228,239);
+    background: radial-gradient(circle, rgba(252,228,239,1) 0%, rgba(227,242,255,1) 100%);
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dark Theme */
+:root[data-theme='dark'] {
+    background: rgb(77,80,137);
+background: radial-gradient(circle, rgba(77,80,137,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Apply theme variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+/* Header Styles */
+.header {
+    background-color: var(--header-background);
+    padding: 50px;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header h1 {
+    font-size: 50px;
 }
+
+/* Button Styles */
+.theme-toggle {
+    background-color: rgb(217,212,255);
+    background: linear-gradient(90deg, rgba(217,212,255,1) 0%, rgba(192,201,255,1) 50%, rgba(195,199,255,1) 100%);
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 53px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle[data-theme='dark'] {
+    background: rgb(38, 32, 52);
+    background: linear-gradient(90deg, rgba(96,78,135,1) 0%, rgba(25,28,48,1) 50%, rgba(19,22,61,1) 100%);;
+}
+
+.theme-toggle:hover {
+    opacity: 0.6;
+}
+
+/* Projects Container Styles */
+.projects-container {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 10px;
+    }
+}
+
